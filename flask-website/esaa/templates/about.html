@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+
+{% block title%} About us {%endblock%}
+
+{%block content%}
+{{super()}}
+    <h1 class="about1">
+        Website <br>For Music<br>Lovers <br>
+    </h1>
+    <p class="para-1">Find Vinyls And Albums</p>
+
+    <div class="photoebi">
+        <img class="mimg pink-floyd" src="{{ url_for('static', filename='img/master-of-puppets_cover.jpeg') }}">
+        <img class="mimg stroke1" src="{{ url_for('static', filename='img/4a90201b4d81ca2f50f6d04e13674fdd.jpg') }}">
+        <img class="mimg stroke2" src="{{ url_for('static', filename='img/The_Strokes_-_The_New_Abnormal.png') }}">
+        <img class="mimg beatle" src="{{ url_for('static', filename='img/beatle.jpg') }}">
+    </div>
+
+{%endblock%}

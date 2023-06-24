@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+{% block title%} Home {%endblock%}
+
+{% block content %}
+    {{super()}}
+
+    <h2 class="welcomepage">Welcome to our Website!</h2>
+    <img class="julian" src="{{ url_for('static', filename='img/julian.webp') }}">
+    <div class="line3"></div>
+
+{% endblock %}

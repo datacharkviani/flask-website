@@ -1,0 +1,15 @@
+{%  extends 'base.html' %}
+ {% block title %} Home page {%  endblock %}
+
+{% block content %}
+<br>
+<h3>წიგნის დამატება</h3>
+    <form method="post" style="width:50%; margin-left: 10px">
+      <div class="form-group">
+        <input type="text" name="title" class="form-control" placeholder="Book Title"><br>
+        <input type="text" name="author" class="form-control" placeholder="Book Author"><br>
+        <input type="text" name="price" class="form-control"  placeholder="Price"><br>
+      </div>
+    <button type="submit" class="btn btn-primary">Add Book</button>
+    </form>
+{% endblock %}
